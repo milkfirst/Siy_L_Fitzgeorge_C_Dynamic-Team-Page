@@ -23,18 +23,52 @@ img {
 }
 
 body    {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Main Page */
+/* ------------- HEADER ------------- */
+
+.mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.mainHeader h1  {
+    font-size: 1.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: orangered;
+}
+
+.mainHeader h2  {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4;
+}
+
+.mainHeader p   {
+    color: darkgray;
+}
+
+.header .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ------------- MAIN PAGE ------------- */
 .container  {
-    height: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Buttons */
+/* ------------- BUTTONS ------------- */
 .buttons   {
     display: flex;
     flex-direction: row;
@@ -49,6 +83,7 @@ body    {
     justify-content: space-between;
 }
 
+/* ------------- LIL BUTTON ------------- */
 .lil-button {
     background: #000;
     color: #fff;
@@ -82,9 +117,9 @@ body    {
     transform: translate(12px, 12px);
 }
 
-/* Carson Button */
+/* ------------- CARSON BUTTON ------------- */
 .car-button {
-    background: darkgray;
+    background: orangered;
     color: #fff;
     border-radius: 100px;
     transition: transforom 0.3s ease;
@@ -94,7 +129,7 @@ body    {
     content: "";
     position: absolute;
     opacity: 0.3;
-    background: darkgray;
+    background: orangered;
     border-radius: inherit;
     width: 100%;
     height: 100%;
@@ -114,4 +149,17 @@ body    {
 
 .car-button:hover::before   {
     transform: translate(12px, 12px);
+}
+
+@media (max-width: 768px) { 
+    .header .container  {
+        flex-direction: column;
+        padding-top: 5px;
+        text-align: center;
+    }   
+
+    .body .container    {
+        display: block;
+        text-align: center;
+    }
 }
