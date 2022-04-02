@@ -1,0 +1,117 @@
+/* NOTES
+class . (MUTIPLE things)
+between < > - nothing
+id #   (ONE thing)
+END OF NOTES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide   {
+    display: none;
+}
+
+html, body  {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body    {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Main Page */
+.container  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.buttons   {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn    {
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 60px;
+    justify-content: space-between;
+}
+
+.lil-button {
+    background: #000;
+    color: #fff;
+    border-radius: 100px;
+    transition: transforom 0.3s ease;
+}
+
+.lil-button::after, .lil-button::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #000;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.lil-button:hover   {
+    transform: translate(-12px, -12px);
+}
+
+.lil-button:hover::after   {
+    transform: translate(6px, 6px);
+}
+
+.lil-button:hover::before   {
+    transform: translate(12px, 12px);
+}
+
+/* Carson Button */
+.car-button {
+    background: darkgray;
+    color: #fff;
+    border-radius: 100px;
+    transition: transforom 0.3s ease;
+}
+
+.car-button::after, .car-button::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: darkgray;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.car-button:hover   {
+    transform: translate(-12px, -12px);
+}
+
+.car-button:hover::after   {
+    transform: translate(6px, 6px);
+}
+
+.car-button:hover::before   {
+    transform: translate(12px, 12px);
+}
