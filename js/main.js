@@ -4,17 +4,17 @@ between < > - nothing
 id #   (ONE thing)
 END OF NOTES */
 
-let img = document.querySelector('img');
-let lalaine = document.querySelector('.btn lil-button');
-let carson = document.querySelector('.btn car-button');
-let paragraph = document.querySelector('.teamBios');
+var lalaine = document.querySelector('.lil-button');
+var carson = document.querySelector('.car-button');
 
-lalaine.addEventListener('click', () => {a
+var textBox = document.querySelector('.teamBio');
+
+lalaine.addEventListener("click", function() {
 	img.src = 'images/lalaine.png';
-	paragraph.innerText = 'PLEASE WORK.';
+	textBox.innerText = 'PLEASE WORK.';
 });
 
-carson.addEventListener('click', () => {
+carson.addEventListener('click', function() {
 	img.src = 'images/carson.png';
-	paragraph.innerText = 'MY NAME CARSON';
+	textBox.innerText = 'MY NAME CARSON';
 });
